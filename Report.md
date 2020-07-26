@@ -49,7 +49,7 @@ Ornstein–Uhlenbeck process can be easily applied to the algorithm for generati
 
 # Plot of Rewards
 Average agents score stabilizes after the 80th episode reaching the average reward around 36 points. 
-![Scores:](/images/learning.png)
+![Scores:](/images/learning.PNG)
 Running the environment with an already trained network shows an average score around 38.5 points over 200 episodes.
 ![Scores:](/images/agents_performance.png)
 # Ideas for Future Work

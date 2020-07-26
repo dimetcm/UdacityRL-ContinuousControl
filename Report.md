@@ -3,6 +3,8 @@ Agent uses deep deterministic policy gradient algorithm (DDPG)(https://arxiv.org
 
 ### Hyperparameters
 The algorithm has the following set of hyperparameters:
+| Parameter | Value |
+| ----------- | ----------- |
 |BUFFER_SIZE = int(1e5) | replay buffer size
 |BATCH_SIZE = 256  | minibatch size
 |GAMMA = 0.99  | discount factor

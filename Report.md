@@ -1,5 +1,5 @@
 # Learning Algorithm
-Agent uses deep deterministic policy gradient algorithm (DDPG)(https://arxiv.org/abs/1509.02971). DDPG is an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces. https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum was used as a base algorithm implementation adopted to the "Reacher" environment, with minor modifications.
+Agent uses deep deterministic policy gradient algorithm [DDPG](https://arxiv.org/abs/1509.02971). DDPG is an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces. [DDPG-pendulum project](https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum) was used as a reference algorithm implementation adopted to the "Reacher" environment, with minor modifications.
 
 ### Hyperparameters
 The algorithm has the following set of hyperparameters:
@@ -13,6 +13,7 @@ The algorithm has the following set of hyperparameters:
 |LR_CRITIC = 1e-3  | learning rate of the critic
 |WEIGHT_DECAY = 0  | L2 weight decay
 |APPLY_OU_NOISE = False | apply QUNoise for action selection
+
 ### Model Configuration
 #### Actor
 | Layer | In | Out
@@ -48,8 +49,9 @@ Ornstein–Uhlenbeck process can be easily applied to the algorithm for generati
 
 # Plot of Rewards
 Average agents score stabilizes after the 80th episode reaching the average reward around 36 points. 
-![Scores:](/images/scores.png)
+![Scores:](/images/learning.png)
 Running the environment with an already trained network shows an average score around 38.5 points over 200 episodes.
+![Scores:](/images/agents_performance.png)
 # Ideas for Future Work
 
 ### Comparing performance to other algorithms, like PPO. Adding prioritized experience replay.
